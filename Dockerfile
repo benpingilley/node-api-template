@@ -1,6 +1,6 @@
 FROM        node:latest
 
-MAINTAINER  ben.pingilley@viawest.com
+MAINTAINER  ben.pingilley@gmail.com
 
 RUN         mkdir -p /var/log/api/ && useradd -ms /bin/bash nodeuser
 
