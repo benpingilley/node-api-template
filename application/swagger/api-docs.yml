@@ -1,0 +1,45 @@
+---
+swagger: '2.0'
+info:
+  title: Node API Standard
+  description: 'A Basic API Template for NodeJS'
+basePath: /api
+tags:
+  - name: "Basic"
+    description: "Async vs Sync Endpoints"
+
+####### DEFINITIONS ########
+paths:
+  /hello:
+    get:
+      tags:
+        - "Basic"
+      summary: Echo 'Hello' on command line (Async)
+      operationId: getHelloCommand
+      produces:
+        - string
+      responses:
+        '200':
+          description: Command successfully run
+  /addTwo/{one}/{two}:
+    get:
+      tags:
+        - "Basic"
+      summary: Adds two numbers together (Sync)
+      operationId: getAddTwo
+      produces:
+        - integer
+      parameters:
+        - name: one
+          in: path
+          description: First Number
+          required: true
+          type: integer
+        - name: two
+          in: path
+          description: Second Number
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Numbers added successfully
