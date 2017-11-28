@@ -1,3 +1,5 @@
+[![coverage report](https://codecov.io/gh/benpingilley/node-api-template/branch/master/graph/badge.svg)](https://codecov.io/gh/benpingilley/node-api-template)
+
 # Node API Template on Docker
 
 The API framework includes logging, lint testing, unit/integration testing, code coverage, swagger wrapped in a Docker container.  
